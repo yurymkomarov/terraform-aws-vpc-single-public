@@ -8,7 +8,7 @@ We recommend this configuration if you need to run a single-tier, public-facing 
 
 The following diagram shows the key components of the configuration for this module:
 
-![The following diagram shows the key components of the configuration for this module](/images/diagram.png?raw=true)
+![The following diagram shows the key components of the configuration for this module](https://github.com/yurymkomarov/terraform-aws-vpc-single-public/raw/master/images/diagram.png?raw=true)
 
 The configuration for this module includes the following:
 
