@@ -21,6 +21,7 @@ resource "aws_vpc" "this" {
 
   tags = {
     Name      = var.name
+    Module    = path.module
     Workspace = terraform.workspace
   }
 
@@ -52,6 +53,7 @@ resource "aws_security_group" "this" {
 
   tags = {
     Name      = var.name
+    Module    = path.module
     Workspace = terraform.workspace
   }
 
@@ -70,6 +72,7 @@ resource "aws_subnet" "public" {
 
   tags = {
     Name       = var.name
+    Module     = path.module
     Workspace  = terraform.workspace
     SubnetType = "public"
   }
@@ -86,6 +89,7 @@ resource "aws_internet_gateway" "this" {
 
   tags = {
     Name      = var.name
+    Module    = path.module
     Workspace = terraform.workspace
   }
 
@@ -101,6 +105,7 @@ resource "aws_route_table" "public" {
 
   tags = {
     Name       = var.name
+    Module     = path.module
     Workspace  = terraform.workspace
     SubnetType = "public"
   }
@@ -155,6 +160,7 @@ resource "aws_cloudwatch_log_group" "this" {
 
   tags = {
     Name      = var.name
+    Module    = path.module
     Workspace = terraform.workspace
   }
 
@@ -170,6 +176,7 @@ resource "aws_s3_bucket" "this" {
 
   tags = {
     Name      = var.name
+    Module    = path.module
     Workspace = terraform.workspace
   }
 
@@ -189,6 +196,7 @@ resource "aws_iam_role" "this" {
 
   tags = {
     Name      = var.name
+    Module    = path.module
     Workspace = terraform.workspace
   }
 

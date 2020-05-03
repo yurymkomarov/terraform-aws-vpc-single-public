@@ -2,8 +2,6 @@
 
 The configuration for this scenario includes a virtual private cloud (VPC) with a single public subnet, and an internet gateway to enable communication over the internet.
 
-We recommend this configuration if you need to run a single-tier, public-facing web application, such as a blog or a simple website.
-
 ## Overview
 
 The following diagram shows the key components of the configuration for this module:
